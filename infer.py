@@ -20,3 +20,18 @@ flags.DEFINE_float("temperature", 0.5, "temperature")
 FLAGS = flags.FLAGS
 
 def main(_):
+  config = cPickle.load(open(FLAGS.logdir + "/hyperparams.pkl", 'rb'))
+  pp.pprint(config)
+
+  try:
+    # pre-trained chars embedding
+    emb = np.load("./data/emb.npy")
+    chars = cPickle.load(open("./data/vocab.pkl", 'rb'))
+    vocab_size, emb_size = np.shape(emb)
+    data_loader = TextLoader('./data', 1, chars)
+  except Exception:
+    data_loader = TextLoader('./data', 1)
+    emb_size = config["emb_size"]
+    vocab_size = data_loader.vocab_size
+
+  checkpoint = FLAGS.checkpoint + '/model.ckpt'
