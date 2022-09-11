@@ -57,3 +57,10 @@ class GRUCellCond(RNNCell):
           [inputs, state, context], 2 * self._num_units, True, 1.0))
         r, u = array_ops.split(
             value=value,
+            num_or_size_splits=2,
+            axis=1)
+      with vs.variable_scope("candidate"):
+        c = self._activation(_linear([inputs, r * state],
+                                     self._num_units, True))
+      new_h = u * state + (1 - u) * c
+    return new_h, new_h
