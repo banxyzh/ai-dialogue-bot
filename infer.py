@@ -35,3 +35,31 @@ def main(_):
     vocab_size = data_loader.vocab_size
 
   checkpoint = FLAGS.checkpoint + '/model.ckpt'
+
+  model = DialogueModel(batch_size=1, max_seq_length=data_loader.seq_length,
+                        vocab_size=vocab_size, pad_token_id=0, unk_token_id=UNK_ID,
+                        emb_size=emb_size, memory_size=config["memory_size"],
+                        keep_prob=config["keep_prob"], learning_rate=config["learning_rate"],
+                        grad_clip=config["grad_clip"], temperature=config["temperature"], infer=True)
+
+  init = tf.global_variables_initializer()
+  saver = tf.train.Saver()
+
+  with tf.Session() as sess:
+    sess.run(init)
+
+    if len(glob(checkpoint + "*")) > 0:
+      saver.restore(sess, checkpoint)
+    else:
+      print("No model found!")
+      return
+
+    ## -- debug --
+    #np.set_printoptions(threshold=np.inf)
+    #for v in tf.trainable_variables():
+    #  print(v.name)
+    #  print(sess.run(v))
+    #  print()
+    #return
+
+    while True:
