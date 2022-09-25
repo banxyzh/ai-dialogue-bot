@@ -63,3 +63,22 @@ def main(_):
     #return
 
     while True:
+      try:
+        input_ = input('in> ')
+      except EOFError:
+        print("\nBye!")
+        break
+
+      input_ids, input_len = data_loader.parse_input(input_)
+
+      feed = {
+        model.input_data: np.expand_dims(input_ids, 0),
+        model.input_lengths: [input_len]
+      }
+
+      output_ids, state = sess.run([model.output_ids, model.final_state], feed_dict=feed)
+
+      print(data_loader.compose_output(output_ids[0]))
+
+if __name__ == "__main__":
+  tf.app.run()
