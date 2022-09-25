@@ -1,3 +1,3 @@
 import numpy as np
 import tensorflow as tf
-from 
+from tensorflow.contrib import seq2
