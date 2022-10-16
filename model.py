@@ -3,4 +3,4 @@ import tensorflow as tf
 from tensorflow.contrib import seq2seq
 from tensorflow.contrib.rnn import MultiRNNCell, DropoutWrapper, GRUCell
 from tensorflow.python.ops import array_ops
-from t
+from tensorflow.python.op
