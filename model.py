@@ -6,4 +6,4 @@ from tensorflow.python.ops import array_ops
 from tensorflow.python.ops import init_ops
 from tensorflow.python.ops.nn import bidirectional_dynamic_rnn
 from tensorflow.python.layers import core as layers_core
-from tensorflow.contrib
+from tensorflow.contrib.layers import xavier_init
