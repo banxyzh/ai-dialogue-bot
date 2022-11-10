@@ -7,4 +7,6 @@ from tensorflow.python.ops import init_ops
 from tensorflow.python.ops.nn import bidirectional_dynamic_rnn
 from tensorflow.python.layers import core as layers_core
 from tensorflow.contrib.layers import xavier_initializer as glorot
-from grucell_cond import GRUC
+from grucell_cond import GRUCellCond, CondWrapper
+
+def _co
