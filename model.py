@@ -10,4 +10,5 @@ from tensorflow.contrib.layers import xavier_initializer as glorot
 from grucell_cond import GRUCellCond, CondWrapper
 
 def _count_param_size(tvars):
-  # param
+  # parameters count
+  count =
