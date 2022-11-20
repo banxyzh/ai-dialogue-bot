@@ -14,4 +14,4 @@ def _count_param_size(tvars):
   count = 0
   for tvar in tvars:
     c = 1
-    for
+    for var in list(tvar.shape
