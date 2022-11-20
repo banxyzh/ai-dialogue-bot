@@ -11,4 +11,5 @@ from grucell_cond import GRUCellCond, CondWrapper
 
 def _count_param_size(tvars):
   # parameters count
-  count =
+  count = 0
+  for tvar in tv
