@@ -16,4 +16,7 @@ def _count_param_size(tvars):
     c = 1
     for var in list(tvar.shape):
       c = c * int(var)
-    count = count +
+    count = count + c
+  return count
+
+cl
