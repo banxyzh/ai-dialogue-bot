@@ -19,4 +19,4 @@ def _count_param_size(tvars):
     count = count + c
   return count
 
-cl
+class DialogueModel(obje
