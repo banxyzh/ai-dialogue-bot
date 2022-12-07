@@ -20,4 +20,4 @@ def _count_param_size(tvars):
   return count
 
 class DialogueModel(object):
-  def __init__(s
+  def __init__(self, batch_size, max_seq
