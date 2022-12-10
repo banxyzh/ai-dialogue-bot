@@ -21,4 +21,4 @@ def _count_param_size(tvars):
 
 class DialogueModel(object):
   def __init__(self, batch_size, max_seq_length, vocab_size,
-           
+               start_token_id=1, end_tok
