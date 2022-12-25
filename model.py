@@ -25,4 +25,4 @@ class DialogueModel(object):
                emb_size=100, memory_size=100, keep_prob=0.5, temperature=0.5, antilm=0.55,
                learning_rate=0.001, grad_clip=5.0, infer=False):
 
-    
+    self._batch_size = batch_si
