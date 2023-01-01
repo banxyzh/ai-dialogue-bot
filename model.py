@@ -27,4 +27,5 @@ class DialogueModel(object):
 
     self._batch_size = batch_size
     self._vocab_size = vocab_size
-    self._memory_si
+    self._memory_size = memory_size
+ 
