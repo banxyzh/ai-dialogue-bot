@@ -26,4 +26,5 @@ class DialogueModel(object):
                learning_rate=0.001, grad_clip=5.0, infer=False):
 
     self._batch_size = batch_size
-    self._vocab_size = voc
+    self._vocab_size = vocab_size
+    self._memory_si
