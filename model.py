@@ -29,4 +29,5 @@ class DialogueModel(object):
     self._vocab_size = vocab_size
     self._memory_size = memory_size
     self._start_token_id = start_token_id
-    self._end_token_id = e
+    self._end_token_id = end_token_id
+    self
