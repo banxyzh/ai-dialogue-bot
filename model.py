@@ -30,4 +30,5 @@ class DialogueModel(object):
     self._memory_size = memory_size
     self._start_token_id = start_token_id
     self._end_token_id = end_token_id
-    self._max_seq_length = max_seq_leng
+    self._max_seq_length = max_seq_length
+    self._unk_token_id = u
