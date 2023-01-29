@@ -33,4 +33,5 @@ class DialogueModel(object):
     self._max_seq_length = max_seq_length
     self._unk_token_id = unk_token_id
     self._keep_prob = keep_prob
-    self._temperature = 
+    self._temperature = temperature
+    self
