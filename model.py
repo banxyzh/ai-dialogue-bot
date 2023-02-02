@@ -34,4 +34,5 @@ class DialogueModel(object):
     self._unk_token_id = unk_token_id
     self._keep_prob = keep_prob
     self._temperature = temperature
-    self._start_token_id = start_
+    self._start_token_id = start_token_id
+    self._end_token_id = en
