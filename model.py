@@ -38,4 +38,6 @@ class DialogueModel(object):
     self._end_token_id = end_token_id
     self._pad_token_id = pad_token_id
     self._infer = infer
-    self
+    self._antilm = antilm
+
+ 
