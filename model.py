@@ -40,4 +40,4 @@ class DialogueModel(object):
     self._infer = infer
     self._antilm = antilm
 
-    self.input_data =
+    self.input_data = tf.placeholder(tf.int32,
