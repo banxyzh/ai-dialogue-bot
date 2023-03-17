@@ -44,4 +44,4 @@ class DialogueModel(object):
     self.input_lengths = tf.placeholder(tf.int32, shape=[batch_size], name="input_lengths")
     self.output_data = tf.placeholder(tf.int32, [batch_size, max_seq_length], name='output_data')
     self.output_lengths = tf.placeholder(tf.int32, [batch_size], name='output_lengths')
-    
+    self.global_step = tf.Var
