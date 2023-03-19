@@ -47,4 +47,4 @@ class DialogueModel(object):
     self.global_step = tf.Variable(0, name="global_step", trainable=False)
 
     with tf.device("/cpu:0"):
-      self.embedding
+      self.embedding = tf.get_variable("embed
