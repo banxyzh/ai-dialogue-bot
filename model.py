@@ -46,4 +46,4 @@ class DialogueModel(object):
     self.output_lengths = tf.placeholder(tf.int32, [batch_size], name='output_lengths')
     self.global_step = tf.Variable(0, name="global_step", trainable=False)
 
-    wi
+    with tf.device("/cpu:0")
