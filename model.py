@@ -48,4 +48,4 @@ class DialogueModel(object):
 
     with tf.device("/cpu:0"):
       self.embedding = tf.get_variable("embedding", [vocab_size, emb_size])
-      inputs = tf.nn
+      inputs = tf.nn.embedding_lookup(self.em
