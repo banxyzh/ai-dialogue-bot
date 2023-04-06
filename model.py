@@ -50,4 +50,5 @@ class DialogueModel(object):
       self.embedding = tf.get_variable("embedding", [vocab_size, emb_size])
       inputs = tf.nn.embedding_lookup(self.embedding, self.input_data)
 
-    if self._keep_pr
+    if self._keep_prob < 1 and not infer:
+   
