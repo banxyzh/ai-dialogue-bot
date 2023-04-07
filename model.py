@@ -51,4 +51,4 @@ class DialogueModel(object):
       inputs = tf.nn.embedding_lookup(self.embedding, self.input_data)
 
     if self._keep_prob < 1 and not infer:
-      inputs = tf.nn.dropout
+      inputs = tf.nn.dropout(inputs, keep_prob=se
