@@ -53,4 +53,5 @@ class DialogueModel(object):
     if self._keep_prob < 1 and not infer:
       inputs = tf.nn.dropout(inputs, keep_prob=self._keep_prob)
 
-    with tf.variable_scope("encod
+    with tf.variable_scope("encoder", initializer=glorot()):
+ 
