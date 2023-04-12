@@ -54,4 +54,5 @@ class DialogueModel(object):
       inputs = tf.nn.dropout(inputs, keep_prob=self._keep_prob)
 
     with tf.variable_scope("encoder", initializer=glorot()):
-      fw_cell = GRUCell(emb_s
+      fw_cell = GRUCell(emb_size)
+      bw_cell = GRUCell
