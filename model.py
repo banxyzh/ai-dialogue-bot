@@ -55,4 +55,5 @@ class DialogueModel(object):
 
     with tf.variable_scope("encoder", initializer=glorot()):
       fw_cell = GRUCell(emb_size)
-      bw_cell = GRUCell
+      bw_cell = GRUCell(emb_size)
+      
