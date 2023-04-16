@@ -56,4 +56,5 @@ class DialogueModel(object):
     with tf.variable_scope("encoder", initializer=glorot()):
       fw_cell = GRUCell(emb_size)
       bw_cell = GRUCell(emb_size)
-      if self._keep_prob < 1 and 
+      if self._keep_prob < 1 and not infer:
+        fw_cell =
