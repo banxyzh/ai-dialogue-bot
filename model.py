@@ -58,4 +58,4 @@ class DialogueModel(object):
       bw_cell = GRUCell(emb_size)
       if self._keep_prob < 1 and not infer:
         fw_cell = DropoutWrapper(fw_cell, output_keep_prob=self._keep_prob)
-        bw_cell
+        bw_cell = DropoutWrapper(bw_cell, outpu
