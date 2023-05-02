@@ -60,4 +60,5 @@ class DialogueModel(object):
         fw_cell = DropoutWrapper(fw_cell, output_keep_prob=self._keep_prob)
         bw_cell = DropoutWrapper(bw_cell, output_keep_prob=self._keep_prob)
 
-    with tf.variable_scope("context", 
+    with tf.variable_scope("context", initializer=glorot()):
+      c
