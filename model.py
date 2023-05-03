@@ -61,4 +61,5 @@ class DialogueModel(object):
         bw_cell = DropoutWrapper(bw_cell, output_keep_prob=self._keep_prob)
 
     with tf.variable_scope("context", initializer=glorot()):
-      ctx_cell = GRUCell(memory_
+      ctx_cell = GRUCell(memory_size * 2)
+      self.ctx_w = 
