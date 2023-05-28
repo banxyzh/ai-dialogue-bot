@@ -63,4 +63,4 @@ class DialogueModel(object):
     with tf.variable_scope("context", initializer=glorot()):
       ctx_cell = GRUCell(memory_size * 2)
       self.ctx_w = tf.get_variable("context_w", [memory_size * 2, memory_size])
-      self.ctx_b = tf.get_variable("context_b", [memory_size], initializer=init
+      self.ctx_b = tf.get_variable("context_b", [memory_size], initializer=init_ops.zeros_initializer(
