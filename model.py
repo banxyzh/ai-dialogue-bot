@@ -64,4 +64,6 @@ class DialogueModel(object):
       ctx_cell = GRUCell(memory_size * 2)
       self.ctx_w = tf.get_variable("context_w", [memory_size * 2, memory_size])
       self.ctx_b = tf.get_variable("context_b", [memory_size], initializer=init_ops.zeros_initializer())
-      self.initial_state = ctx_cell.zero_state(self._batch_size, tf.fl
+      self.initial_state = ctx_cell.zero_state(self._batch_size, tf.float32)
+
+    with tf
