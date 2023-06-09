@@ -66,4 +66,5 @@ class DialogueModel(object):
       self.ctx_b = tf.get_variable("context_b", [memory_size], initializer=init_ops.zeros_initializer())
       self.initial_state = ctx_cell.zero_state(self._batch_size, tf.float32)
 
-    with tf.variable_scope("decoder", i
+    with tf.variable_scope("decoder", initializer=glorot()):
+ 
