@@ -67,4 +67,4 @@ class DialogueModel(object):
       self.initial_state = ctx_cell.zero_state(self._batch_size, tf.float32)
 
     with tf.variable_scope("decoder", initializer=glorot()):
-      # GRU with conditional distribution in sec 2.2 of ht
+      # GRU with conditional distribution in sec 2.2 of https://arxiv.org/pdf/1406.1078
