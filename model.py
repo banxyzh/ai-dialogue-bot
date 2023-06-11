@@ -68,4 +68,6 @@ class DialogueModel(object):
 
     with tf.variable_scope("decoder", initializer=glorot()):
       # GRU with conditional distribution in sec 2.2 of https://arxiv.org/pdf/1406.1078.pdf
-      dec_cell = GRUCellCond(memo
+      dec_cell = GRUCellCond(memory_size)
+
+    self.out
