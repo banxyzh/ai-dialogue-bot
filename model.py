@@ -70,4 +70,4 @@ class DialogueModel(object):
       # GRU with conditional distribution in sec 2.2 of https://arxiv.org/pdf/1406.1078.pdf
       dec_cell = GRUCellCond(memory_size)
 
-    self.outputs, self.output_ids, _, self.final_state = self.seq2seq(inputs
+    self.outputs, self.output_ids, _, self.final_state = self.seq2seq(inputs, fw_cell, bw_cell, ctx_
