@@ -73,4 +73,5 @@ class DialogueModel(object):
     self.outputs, self.output_ids, _, self.final_state = self.seq2seq(inputs, fw_cell, bw_cell, ctx_cell, dec_cell)
 
     loss = self.get_loss(self.outputs)
-    self.loss = 
+    self.loss = tf.reduce_mean(loss)
+    t
