@@ -74,4 +74,4 @@ class DialogueModel(object):
 
     loss = self.get_loss(self.outputs)
     self.loss = tf.reduce_mean(loss)
-    t
+    tf.summary.scalar('
