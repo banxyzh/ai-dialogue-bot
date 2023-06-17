@@ -76,4 +76,4 @@ class DialogueModel(object):
     self.loss = tf.reduce_mean(loss)
     tf.summary.scalar('loss', self.loss)
 
-    tvars 
+    tvars = tf.trainable_variables(
