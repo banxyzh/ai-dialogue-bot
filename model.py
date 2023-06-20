@@ -81,4 +81,4 @@ class DialogueModel(object):
     print("parameter size:", _count_param_size(tvars))
 
     grads, _ = tf.clip_by_global_norm(tf.gradients(self.loss, tvars), grad_clip)
-    
+    optimizer = tf.train.Adam
