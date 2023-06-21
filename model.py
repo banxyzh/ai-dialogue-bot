@@ -82,4 +82,4 @@ class DialogueModel(object):
 
     grads, _ = tf.clip_by_global_norm(tf.gradients(self.loss, tvars), grad_clip)
     optimizer = tf.train.AdamOptimizer(learning_rate)
-    self.train_op = optimizer.app
+    self.train_op = optimizer.apply_gradients(zip(gra
