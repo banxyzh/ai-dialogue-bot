@@ -85,4 +85,4 @@ class DialogueModel(object):
     self.train_op = optimizer.apply_gradients(zip(grads, tvars), global_step=self.global_step)
 
   def get_loss(self, outputs):
-    
+    output_maxlen = tf.minim
