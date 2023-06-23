@@ -84,4 +84,5 @@ class DialogueModel(object):
     optimizer = tf.train.AdamOptimizer(learning_rate)
     self.train_op = optimizer.apply_gradients(zip(grads, tvars), global_step=self.global_step)
 
-  def get_loss(se
+  def get_loss(self, outputs):
+    
