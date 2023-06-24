@@ -86,4 +86,4 @@ class DialogueModel(object):
 
   def get_loss(self, outputs):
     output_maxlen = tf.minimum(tf.shape(outputs)[1], self._max_seq_length)
-  
+    out_data_slice 
