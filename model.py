@@ -89,4 +89,5 @@ class DialogueModel(object):
     out_data_slice = tf.slice(self.output_data, [0, 0], [-1, output_maxlen])
     out_logits_slice = tf.slice(outputs, [0, 0, 0], [-1, output_maxlen, -1])
 
-    wi
+    with tf.name_scope("costs"):
+      #
