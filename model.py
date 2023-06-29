@@ -90,4 +90,4 @@ class DialogueModel(object):
     out_logits_slice = tf.slice(outputs, [0, 0, 0], [-1, output_maxlen, -1])
 
     with tf.name_scope("costs"):
-      # We need to delete zeroed elements in ta
+      # We need to delete zeroed elements in targets, beyond max sequenc
