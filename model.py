@@ -91,4 +91,5 @@ class DialogueModel(object):
 
     with tf.name_scope("costs"):
       # We need to delete zeroed elements in targets, beyond max sequence
-      length_mask = tf.sequence_mask(self.output_lengths, maxlen=output_max
+      length_mask = tf.sequence_mask(self.output_lengths, maxlen=output_maxlen, dtype=tf.float32)
+   
