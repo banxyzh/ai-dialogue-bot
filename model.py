@@ -93,4 +93,6 @@ class DialogueModel(object):
       # We need to delete zeroed elements in targets, beyond max sequence
       length_mask = tf.sequence_mask(self.output_lengths, maxlen=output_maxlen, dtype=tf.float32)
       final_loss = seq2seq.sequence_loss(out_logits_slice, out_data_slice, length_mask)
-      ret
+      return final_loss
+
+  def seq2
