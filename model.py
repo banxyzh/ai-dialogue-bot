@@ -95,4 +95,4 @@ class DialogueModel(object):
       final_loss = seq2seq.sequence_loss(out_logits_slice, out_data_slice, length_mask)
       return final_loss
 
-  def seq2
+  def seq2seq(self, inputs, fw_cell
