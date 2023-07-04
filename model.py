@@ -95,4 +95,5 @@ class DialogueModel(object):
       final_loss = seq2seq.sequence_loss(out_logits_slice, out_data_slice, length_mask)
       return final_loss
 
-  def seq2seq(self, inputs, fw_cell, bw_cell, ctx_cell, dec_cell, reuse=F
+  def seq2seq(self, inputs, fw_cell, bw_cell, ctx_cell, dec_cell, reuse=False):
+    with tf.variable_s
