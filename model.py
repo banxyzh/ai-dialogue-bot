@@ -96,4 +96,4 @@ class DialogueModel(object):
       return final_loss
 
   def seq2seq(self, inputs, fw_cell, bw_cell, ctx_cell, dec_cell, reuse=False):
-    with tf.variable_s
+    with tf.variable_scope("seq2seq") as scope:
