@@ -99,4 +99,4 @@ class DialogueModel(object):
     with tf.variable_scope("seq2seq") as scope:
       if reuse:
         scope.reuse_variables()
-      e
+      enc_outputs, enc_state = sel
