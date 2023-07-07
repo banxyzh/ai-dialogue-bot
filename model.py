@@ -99,4 +99,5 @@ class DialogueModel(object):
     with tf.variable_scope("seq2seq") as scope:
       if reuse:
         scope.reuse_variables()
-      enc_outputs, enc_state = self.encode(fw_cell, bw_cell, in
+      enc_outputs, enc_state = self.encode(fw_cell, bw_cell, inputs)
+      ctx_outputs, ctx_st
