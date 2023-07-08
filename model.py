@@ -100,4 +100,5 @@ class DialogueModel(object):
       if reuse:
         scope.reuse_variables()
       enc_outputs, enc_state = self.encode(fw_cell, bw_cell, inputs)
-      ctx_outputs, ctx_state = self.contextua
+      ctx_outputs, ctx_state = self.contextual(ctx_cell, enc_state)
+      dec
