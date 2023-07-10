@@ -104,4 +104,6 @@ class DialogueModel(object):
       dec_outputs, dec_sample_id, dec_state = self.decode(dec_cell, enc_outputs, ctx_outputs)
     outputs = dec_outputs
     output_ids = dec_sample_id
-    outp
+    output_state = dec_state.cell_state
+
+  
