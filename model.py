@@ -108,4 +108,4 @@ class DialogueModel(object):
 
     return outputs, output_ids, output_state, ctx_state
 
-  def enc
+  def encode(self, fw_cell, bw_
