@@ -106,4 +106,4 @@ class DialogueModel(object):
     output_ids = dec_sample_id
     output_state = dec_state.cell_state
 
-    return outputs, 
+    return outputs, output_ids, output_state, c
