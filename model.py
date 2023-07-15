@@ -111,4 +111,4 @@ class DialogueModel(object):
   def encode(self, fw_cell, bw_cell, inputs):
     with tf.variable_scope("encode"):
       fw_cell_state = fw_cell.zero_state(self._batch_size, tf.float32)
-      bw_cell_state = bw_cell.zero_s
+      bw_cell_state = bw_cell.zero_state(self._batch_size, tf.flo
