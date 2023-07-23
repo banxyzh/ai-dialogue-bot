@@ -117,4 +117,4 @@ class DialogueModel(object):
                                                                         cell_bw=bw_cell,
                                                                         inputs=inputs,
                                                                         sequence_length=self.input_lengths,
-                              
+                                                     
