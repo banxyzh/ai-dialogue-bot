@@ -118,4 +118,4 @@ class DialogueModel(object):
                                                                         inputs=inputs,
                                                                         sequence_length=self.input_lengths,
                                                                         initial_state_fw=fw_cell_state,
-                 
+                                       
