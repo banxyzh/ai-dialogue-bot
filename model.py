@@ -121,4 +121,4 @@ class DialogueModel(object):
                                                                         initial_state_bw=bw_cell_state)
 
       enc_state = tf.concat([enc_state_fw, enc_state_bw], 1)
-      enc_out
+      enc_outputs = tf.concat(enc_out
