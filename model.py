@@ -125,4 +125,4 @@ class DialogueModel(object):
 
     return enc_outputs, enc_state
 
-  def cont
+  def contextual(self, ctx_cell, enc_
