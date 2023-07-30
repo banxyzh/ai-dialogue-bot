@@ -123,4 +123,6 @@ class DialogueModel(object):
       enc_state = tf.concat([enc_state_fw, enc_state_bw], 1)
       enc_outputs = tf.concat(enc_out, 2)
 
-    return enc_outpu
+    return enc_outputs, enc_state
+
+  def cont
