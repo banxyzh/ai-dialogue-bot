@@ -128,4 +128,4 @@ class DialogueModel(object):
   def contextual(self, ctx_cell, enc_state):
     with tf.variable_scope("context"):
       _, ctx_state = ctx_cell(enc_state, self.initial_state)
-      # Sec 3.2.3
+      # Sec 3.2.3 in https://arxiv.org/pdf/1507.
