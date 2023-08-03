@@ -129,4 +129,5 @@ class DialogueModel(object):
     with tf.variable_scope("context"):
       _, ctx_state = ctx_cell(enc_state, self.initial_state)
       # Sec 3.2.3 in https://arxiv.org/pdf/1507.02221.pdf
-      ctx_outputs = tf.tanh(tf.matmul(ctx_state, self.ctx_w) + self
+      ctx_outputs = tf.tanh(tf.matmul(ctx_state, self.ctx_w) + self.ctx_b)
+    return ctx_ou
