@@ -132,4 +132,4 @@ class DialogueModel(object):
       ctx_outputs = tf.tanh(tf.matmul(ctx_state, self.ctx_w) + self.ctx_b)
     return ctx_outputs, ctx_state
 
-  de
+  def decode(self, dec_c
