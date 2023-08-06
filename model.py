@@ -133,4 +133,5 @@ class DialogueModel(object):
     return ctx_outputs, ctx_state
 
   def decode(self, dec_cell, enc_outputs, ctx_outputs):
-    with tf.var
+    with tf.variable_scope("decode"):
+ 
