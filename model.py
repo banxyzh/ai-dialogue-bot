@@ -134,4 +134,6 @@ class DialogueModel(object):
 
   def decode(self, dec_cell, enc_outputs, ctx_outputs):
     with tf.variable_scope("decode"):
-      batch_size = sel
+      batch_size = self._batch_size
+
+      attn_m
