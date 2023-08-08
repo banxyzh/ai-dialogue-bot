@@ -136,4 +136,4 @@ class DialogueModel(object):
     with tf.variable_scope("decode"):
       batch_size = self._batch_size
 
-      attn_mech = seq2seq.Bahdanau
+      attn_mech = seq2seq.BahdanauAttention(self._memory_siz
