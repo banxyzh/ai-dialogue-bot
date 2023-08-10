@@ -137,4 +137,5 @@ class DialogueModel(object):
       batch_size = self._batch_size
 
       attn_mech = seq2seq.BahdanauAttention(self._memory_size, enc_outputs, self.input_lengths)
-      dec_cell = CondWrapper(dec_cell, ctx_o
+      dec_cell = CondWrapper(dec_cell, ctx_outputs)
+      dec_cell = s
