@@ -138,4 +138,5 @@ class DialogueModel(object):
 
       attn_mech = seq2seq.BahdanauAttention(self._memory_size, enc_outputs, self.input_lengths)
       dec_cell = CondWrapper(dec_cell, ctx_outputs)
-      dec_cell = seq2seq.AttentionWrapper(dec_cell, attn_mech, self.
+      dec_cell = seq2seq.AttentionWrapper(dec_cell, attn_mech, self._memory_size)
+      dec_initia
