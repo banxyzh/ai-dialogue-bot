@@ -140,4 +140,6 @@ class DialogueModel(object):
       dec_cell = CondWrapper(dec_cell, ctx_outputs)
       dec_cell = seq2seq.AttentionWrapper(dec_cell, attn_mech, self._memory_size)
       dec_initial_state = dec_cell.zero_state(batch_size=batch_size, dtype=tf.float32)
-      helper_build_fn = self._infer_helper if self._infer else self._tr
+      helper_build_fn = self._infer_helper if self._infer else self._train_helper
+
+      outpu
