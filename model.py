@@ -143,4 +143,4 @@ class DialogueModel(object):
       helper_build_fn = self._infer_helper if self._infer else self._train_helper
 
       output_layer = layers_core.Dense(self._vocab_size, use_bias=True, activation=None)
-      dec
+      decoder = seq2seq.Basic
