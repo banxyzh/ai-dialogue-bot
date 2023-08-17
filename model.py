@@ -144,4 +144,5 @@ class DialogueModel(object):
 
       output_layer = layers_core.Dense(self._vocab_size, use_bias=True, activation=None)
       decoder = seq2seq.BasicDecoder(cell=dec_cell,
-                                     help
+                                     helper=helper_build_fn(),
+   
