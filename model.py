@@ -146,4 +146,4 @@ class DialogueModel(object):
       decoder = seq2seq.BasicDecoder(cell=dec_cell,
                                      helper=helper_build_fn(),
                                      initial_state=dec_initial_state,
-                           
+                                     output_layer=output_layer
