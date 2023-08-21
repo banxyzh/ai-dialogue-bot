@@ -147,4 +147,4 @@ class DialogueModel(object):
                                      helper=helper_build_fn(),
                                      initial_state=dec_initial_state,
                                      output_layer=output_layer)
-      dec_output,
+      dec_output, dec_state = seq2seq.dynamic_deco
