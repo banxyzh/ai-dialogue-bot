@@ -149,4 +149,5 @@ class DialogueModel(object):
                                      output_layer=output_layer)
       dec_output, dec_state = seq2seq.dynamic_decode(decoder,
                                                      impute_finished=True,
-                                                     maximum_iterations=s
+                                                     maximum_iterations=self._max_seq_length)
+      
