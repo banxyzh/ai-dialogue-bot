@@ -150,4 +150,4 @@ class DialogueModel(object):
       dec_output, dec_state = seq2seq.dynamic_decode(decoder,
                                                      impute_finished=True,
                                                      maximum_iterations=self._max_seq_length)
-      
+      rnn_output = dec_output.rnn_ou
