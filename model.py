@@ -152,4 +152,4 @@ class DialogueModel(object):
                                                      maximum_iterations=self._max_seq_length)
       rnn_output = dec_output.rnn_output
       sample_id = dec_output.sample_id
-    return rn
+    return rnn_output, sample_id, dec
