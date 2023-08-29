@@ -152,4 +152,6 @@ class DialogueModel(object):
                                                      maximum_iterations=self._max_seq_length)
       rnn_output = dec_output.rnn_output
       sample_id = dec_output.sample_id
-    return rnn_output, sample_id, dec
+    return rnn_output, sample_id, dec_state
+
+  def _infer_helper(s
