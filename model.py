@@ -154,4 +154,5 @@ class DialogueModel(object):
       sample_id = dec_output.sample_id
     return rnn_output, sample_id, dec_state
 
-  def _infer_helper(s
+  def _infer_helper(self):
+    return seq2seq.Greed
