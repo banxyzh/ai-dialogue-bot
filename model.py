@@ -156,4 +156,4 @@ class DialogueModel(object):
 
   def _infer_helper(self):
     return seq2seq.GreedyEmbeddingHelper(self.embedding,
-              
+                                          
