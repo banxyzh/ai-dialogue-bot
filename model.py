@@ -155,4 +155,4 @@ class DialogueModel(object):
     return rnn_output, sample_id, dec_state
 
   def _infer_helper(self):
-    return seq2seq.Greed
+    return seq2seq.GreedyEmbeddingHelper(self.emb
