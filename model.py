@@ -156,4 +156,4 @@ class DialogueModel(object):
 
   def _infer_helper(self):
     return seq2seq.GreedyEmbeddingHelper(self.embedding,
-                                           start_tokens=tf.fil
+                                           start_tokens=tf.fill([self._batch_
