@@ -160,4 +160,5 @@ class DialogueModel(object):
                                            end_token=tf.constant(self._end_token_id, dtype=tf.int32))
 
   def _train_helper(self):
-    start_ids = tf.fill([self._batch_size, 1], self._start_to
+    start_ids = tf.fill([self._batch_size, 1], self._start_token_id)
+    decoder_input_i
