@@ -164,4 +164,4 @@ class DialogueModel(object):
     decoder_input_ids = tf.concat([start_ids, self.output_data], 1)
     decoder_inputs = tf.nn.embedding_lookup(self.embedding, decoder_input_ids)
 
-    return seq2seq.TrainingHelper(inpu
+    return seq2seq.TrainingHelper(inputs=decoder_i
