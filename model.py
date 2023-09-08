@@ -166,4 +166,4 @@ class DialogueModel(object):
 
     return seq2seq.TrainingHelper(inputs=decoder_inputs, sequence_length=self.output_lengths)
 
-  def inf
+  def infer(self, sess, x, y, x_lens,
