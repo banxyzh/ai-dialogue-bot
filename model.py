@@ -168,4 +168,4 @@ class DialogueModel(object):
 
   def infer(self, sess, x, y, x_lens, y_lens, initial_state):
     feed = {self.input_data: x,
-            
+            self.input_lengths: x_
