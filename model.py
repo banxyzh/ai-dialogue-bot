@@ -170,3 +170,4 @@ class DialogueModel(object):
     feed = {self.input_data: x,
             self.input_lengths: x_lens,
             self.output_data: y,
+            self.ou
