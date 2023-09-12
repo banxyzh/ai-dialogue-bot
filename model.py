@@ -173,4 +173,5 @@ class DialogueModel(object):
             self.output_lengths: y_lens}
     fetches = {"outputs": self.outputs,
                "output_ids": self.output_ids,
-               "final_state": self.fina
+               "final_state": self.final_state,
+              
