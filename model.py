@@ -171,4 +171,5 @@ class DialogueModel(object):
             self.input_lengths: x_lens,
             self.output_data: y,
             self.output_lengths: y_lens}
-    fetches = {"outputs": self.outpu
+    fetches = {"outputs": self.outputs,
+               "ou
