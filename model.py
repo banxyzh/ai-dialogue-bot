@@ -174,4 +174,6 @@ class DialogueModel(object):
     fetches = {"outputs": self.outputs,
                "output_ids": self.output_ids,
                "final_state": self.final_state,
-               "global_step": self.g
+               "global_step": self.global_step}
+
+   
