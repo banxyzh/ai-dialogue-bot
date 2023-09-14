@@ -177,4 +177,6 @@ class DialogueModel(object):
                "global_step": self.global_step}
 
     if initial_state is not None:
-      feed[self.initial_state] = i
+      feed[self.initial_state] = initial_state
+
+    return
