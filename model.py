@@ -179,4 +179,4 @@ class DialogueModel(object):
     if initial_state is not None:
       feed[self.initial_state] = initial_state
 
-    return
+    return sess.run(fetches, feed_dict=feed
