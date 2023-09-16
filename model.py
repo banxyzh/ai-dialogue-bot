@@ -181,4 +181,5 @@ class DialogueModel(object):
 
     return sess.run(fetches, feed_dict=feed)
 
-  def step(self, sess, x, y, x_lens, y_lens, initial_state, 
+  def step(self, sess, x, y, x_lens, y_lens, initial_state, summaries=None):
+    feed = 
