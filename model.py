@@ -185,4 +185,5 @@ class DialogueModel(object):
     feed = {self.input_data: x,
             self.input_lengths: x_lens,
             self.output_data: y,
-            self.output_lengths:
+            self.output_lengths: y_lens}
+    fetches = {"ou
