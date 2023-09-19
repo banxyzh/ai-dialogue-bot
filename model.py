@@ -187,4 +187,4 @@ class DialogueModel(object):
             self.output_data: y,
             self.output_lengths: y_lens}
     fetches = {"outputs": self.outputs,
-   
+               "output_
