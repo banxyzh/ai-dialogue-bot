@@ -189,4 +189,5 @@ class DialogueModel(object):
     fetches = {"outputs": self.outputs,
                "output_ids": self.output_ids,
                "final_state": self.final_state,
-               "loss":
+               "loss": self.loss,
+           
