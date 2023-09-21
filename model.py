@@ -191,4 +191,6 @@ class DialogueModel(object):
                "final_state": self.final_state,
                "loss": self.loss,
                "global_step": self.global_step,
-               "train_op": self.t
+               "train_op": self.train_op}
+
+    if initi
