@@ -190,4 +190,5 @@ class DialogueModel(object):
                "output_ids": self.output_ids,
                "final_state": self.final_state,
                "loss": self.loss,
-               "global_step": se
+               "global_step": self.global_step,
+           
