@@ -194,4 +194,5 @@ class DialogueModel(object):
                "train_op": self.train_op}
 
     if initial_state is not None:
-      feed[self.initial_sta
+      feed[self.initial_state] = initial_state
+
