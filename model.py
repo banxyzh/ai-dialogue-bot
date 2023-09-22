@@ -193,4 +193,4 @@ class DialogueModel(object):
                "global_step": self.global_step,
                "train_op": self.train_op}
 
-    if initi
+    if initial_state is not No
