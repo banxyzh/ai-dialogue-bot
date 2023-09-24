@@ -199,4 +199,4 @@ class DialogueModel(object):
     if summaries is not None:
       fetches["summary_out"] = summaries
 
-    retu
+    return sess.run(fetche
