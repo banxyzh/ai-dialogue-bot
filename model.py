@@ -199,4 +199,6 @@ class DialogueModel(object):
     if summaries is not None:
       fetches["summary_out"] = summaries
 
-    return sess.run(fetche
+    return sess.run(fetches, feed_dict=feed)
+
+if 
