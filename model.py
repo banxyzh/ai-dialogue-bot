@@ -197,4 +197,6 @@ class DialogueModel(object):
       feed[self.initial_state] = initial_state
 
     if summaries is not None:
-      fetches["summar
+      fetches["summary_out"] = summaries
+
+    retu
