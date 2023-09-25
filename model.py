@@ -204,4 +204,6 @@ class DialogueModel(object):
 if __name__ == "__main__":
   batch_size = 2
   seq_length = 12
-  vocab_size =
+  vocab_size = 100
+
+  model = DialogueModel
