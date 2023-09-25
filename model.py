@@ -202,4 +202,5 @@ class DialogueModel(object):
     return sess.run(fetches, feed_dict=feed)
 
 if __name__ == "__main__":
-  
+  batch_size = 2
+  seq_leng
