@@ -27,3 +27,20 @@ FLAGS = flags.FLAGS
 
 def main(_):
   pp.pprint(FLAGS.__flags)
+  emb = None
+
+  try:
+    # pre-trained chars embedding
+    emb = np.load("./data/emb.npy")
+    chars = cPickle.load(open("./data/vocab.pkl", 'rb'))
+    vocab_size, emb_size = np.shape(emb)
+    data_loader = TextLoader('./data', FLAGS.batch_size, chars)
+  except Exception:
+    data_loader = TextLoader('./data', FLAGS.batch_size)
+    emb_size = FLAGS.emb_size
+    vocab_size = data_loader.vocab_size
+
+  model = DialogueModel(batch_size=FLAGS.batch_size, max_seq_length=data_loader.seq_length,
+                        vocab_size=vocab_size, pad_token_id=0, unk_token_id=UNK_ID,
+                        emb_size=emb_size, memory_size=FLAGS.memory_size,
+                        keep_prob=FLAGS.keep_prob, learning_rate=FLAGS.learning_rate,
