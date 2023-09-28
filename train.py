@@ -102,3 +102,13 @@ def main(_):
           count = 0
           summary_writer.flush()
           save_path = saver.save(sess, checkpoint)
+          print("Model saved in file:", save_path)
+
+        current_step = tf.train.global_step(sess, model.global_step)
+
+    summary_writer.close()
+    save_path = saver.save(sess, checkpoint)
+    print("Model saved in file:", save_path)
+
+if __name__ == "__main__":
+  tf.app.run()
