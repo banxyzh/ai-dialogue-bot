@@ -44,3 +44,29 @@ def main(_):
                         vocab_size=vocab_size, pad_token_id=0, unk_token_id=UNK_ID,
                         emb_size=emb_size, memory_size=FLAGS.memory_size,
                         keep_prob=FLAGS.keep_prob, learning_rate=FLAGS.learning_rate,
+                        grad_clip=FLAGS.grad_clip, temperature=FLAGS.temperature,
+                        infer=False)
+
+  summaries = tf.summary.merge_all()
+
+  init = tf.global_variables_initializer()
+
+  # save hyper-parameters
+  cPickle.dump(FLAGS.__flags, open(FLAGS.logdir + "/hyperparams.pkl", 'wb'))
+
+  checkpoint = FLAGS.checkpoint + '/model.ckpt'
+  count = 0
+
+  saver = tf.train.Saver()
+
+  with tf.Session() as sess:
+    summary_writer = tf.summary.FileWriter(FLAGS.logdir, sess.graph)
+
+    sess.run(init)
+
+    if len(glob(checkpoint + "*")) > 0:
+      saver.restore(sess, checkpoint)
+      print("Model restored!")
+    else:
+      # load embedding
+      if emb is not None:
