@@ -3,4 +3,6 @@
 from glob import glob
 import os
 import codecs
-import num
+import numpy as np
+import re
+impor
