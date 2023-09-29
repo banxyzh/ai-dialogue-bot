@@ -2,3 +2,5 @@
 
 from glob import glob
 import os
+import codecs
+import num
