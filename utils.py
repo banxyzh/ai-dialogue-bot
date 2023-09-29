@@ -1,3 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from glob im
+from glob import glob
+import os
