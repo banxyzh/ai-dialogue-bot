@@ -9,3 +9,6 @@ import _pickle as cPickle
 import collections
 
 PAD = "_PAD"
+GO = "_GO"
+EOS = "_EOS"
+UNK
