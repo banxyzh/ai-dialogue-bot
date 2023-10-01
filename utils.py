@@ -11,4 +11,5 @@ import collections
 PAD = "_PAD"
 GO = "_GO"
 EOS = "_EOS"
-UNK
+UNK = "_UNK"
+UNK_ID = 
