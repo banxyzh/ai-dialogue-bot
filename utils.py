@@ -12,4 +12,6 @@ PAD = "_PAD"
 GO = "_GO"
 EOS = "_EOS"
 UNK = "_UNK"
-UNK_ID = 
+UNK_ID = 3
+PAD_ID = 0
+START_VOCAB 
