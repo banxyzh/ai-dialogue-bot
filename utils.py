@@ -16,4 +16,5 @@ UNK_ID = 3
 PAD_ID = 0
 START_VOCAB = [PAD, GO, EOS, UNK]
 
-def normalize_unicodes(tex
+def normalize_unicodes(text):
+  text = normalize_punct
