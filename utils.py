@@ -17,4 +17,5 @@ PAD_ID = 0
 START_VOCAB = [PAD, GO, EOS, UNK]
 
 def normalize_unicodes(text):
-  text = normalize_punct
+  text = normalize_punctuation(text)
+  text = "".jo
