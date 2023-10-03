@@ -21,4 +21,4 @@ def normalize_unicodes(text):
   text = "".join([Q2B(c) for c in list(text)])
   return text
 
-def rep
+def replace_all(repls, text):
