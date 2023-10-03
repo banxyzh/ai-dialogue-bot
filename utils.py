@@ -22,3 +22,4 @@ def normalize_unicodes(text):
   return text
 
 def replace_all(repls, text):
+  # return re.sub('|'.join(repls
