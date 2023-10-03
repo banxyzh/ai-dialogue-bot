@@ -18,4 +18,4 @@ START_VOCAB = [PAD, GO, EOS, UNK]
 
 def normalize_unicodes(text):
   text = normalize_punctuation(text)
-  text = "".jo
+  text = "".join([Q2B(c) for c in list(t
