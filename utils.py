@@ -23,4 +23,4 @@ def normalize_unicodes(text):
 
 def replace_all(repls, text):
   # return re.sub('|'.join(repls.keys()), lambda k: repls[k.group(0)], text)
-  return
+  return re.sub(u'|'.join(re
