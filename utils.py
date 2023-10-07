@@ -26,4 +26,6 @@ def replace_all(repls, text):
   return re.sub(u'|'.join(re.escape(key) for key in repls.keys()),
                 lambda k: repls[k.group(0)], text)
 
-def normalize_punctuation(text)
+def normalize_punctuation(text):
+  cpun = [['	'],
+         
