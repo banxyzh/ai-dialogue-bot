@@ -29,4 +29,6 @@ def replace_all(repls, text):
 def normalize_punctuation(text):
   cpun = [['	'],
           [u'﹗'],
-          [u'“', u'゛', u'〃', 
+          [u'“', u'゛', u'〃', u'′'],
+          [u'”'],
+   
