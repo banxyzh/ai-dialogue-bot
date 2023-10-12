@@ -37,4 +37,4 @@ def normalize_punctuation(text):
           [u'》', u'〉', u'＞'],
           [u'﹑'],
           [u'【', u'『', u'〔', u'﹝', u'｢', u'﹁'],
-          [
+          [u'】', u'』', u'〕', u'﹞',
