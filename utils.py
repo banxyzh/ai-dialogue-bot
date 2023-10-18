@@ -48,4 +48,4 @@ def normalize_punctuation(text):
           [u'︱', u'│', u'┼', u''],
           [u'╱'],
           [u'╲'],
-          [u'—', u'ー', u
+          [u'—', u'ー', u'―', u'‐', u'−', u'─', u
