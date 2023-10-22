@@ -52,4 +52,5 @@ def normalize_punctuation(text):
   epun = [u' ', u'！', u'"', u'"', u'\'', u';', u'<', u'>', u'、', u'[', u']', u'(', u')', u'？', u'：', u'･', u'•', u'~', u'|', u'/', u'\\', u'-']
   repls = {}
 
-  for i in range(len(cpu
+  for i in range(len(cpun)):
+    for j in range(l
