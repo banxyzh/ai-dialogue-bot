@@ -54,4 +54,6 @@ def normalize_punctuation(text):
 
   for i in range(len(cpun)):
     for j in range(len(cpun[i])):
-      repls[cpun[i][j]] = e
+      repls[cpun[i][j]] = epun[i]
+
+  return repl
