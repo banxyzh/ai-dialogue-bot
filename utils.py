@@ -58,4 +58,5 @@ def normalize_punctuation(text):
 
   return replace_all(repls, text)
 
-def 
+def Q2B(uchar):
+  """全角转
