@@ -61,4 +61,5 @@ def normalize_punctuation(text):
 def Q2B(uchar):
   """全角转半角"""
   inside_code = ord(uchar)
-  if inside_code == 0x300
+  if inside_code == 0x3000:
+    inside_code = 0x002
