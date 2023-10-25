@@ -62,4 +62,6 @@ def Q2B(uchar):
   """全角转半角"""
   inside_code = ord(uchar)
   if inside_code == 0x3000:
-    inside_code = 0x002
+    inside_code = 0x0020
+  else:
+    inside_c
