@@ -64,4 +64,5 @@ def Q2B(uchar):
   if inside_code == 0x3000:
     inside_code = 0x0020
   else:
-    inside_c
+    inside_code -= 0xfee0
+  #转完
