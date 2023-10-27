@@ -66,4 +66,4 @@ def Q2B(uchar):
   else:
     inside_code -= 0xfee0
   #转完之后不是半角字符返回原来的字符
-  if i
+  if inside_code < 0x0020 or insi
