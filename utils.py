@@ -68,4 +68,6 @@ def Q2B(uchar):
   #转完之后不是半角字符返回原来的字符
   if inside_code < 0x0020 or inside_code > 0x7e:
     return uchar
-  return chr(inside_c
+  return chr(inside_code)
+
+class TextLoader(ob
