@@ -70,4 +70,5 @@ def Q2B(uchar):
     return uchar
   return chr(inside_code)
 
-class TextLoader(ob
+class TextLoader(object):
+  def __init__(
