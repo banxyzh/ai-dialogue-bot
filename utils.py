@@ -71,4 +71,5 @@ def Q2B(uchar):
   return chr(inside_code)
 
 class TextLoader(object):
-  def __init__(self, data_dir, batch_si
+  def __init__(self, data_dir, batch_size, chars=[]):
+    self.data_
