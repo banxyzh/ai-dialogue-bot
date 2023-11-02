@@ -75,4 +75,4 @@ class TextLoader(object):
     self.data_dir = data_dir
     self.batch_size = batch_size
     self.seq_length = 0
-    
+    self.input_files = glob(data_di
