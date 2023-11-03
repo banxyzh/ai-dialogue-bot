@@ -77,4 +77,5 @@ class TextLoader(object):
     self.seq_length = 0
     self.input_files = glob(data_dir + '/*.txt')
     self.vocabs = {}
-    self.chars =
+    self.chars = chars
+    self.seq_length
