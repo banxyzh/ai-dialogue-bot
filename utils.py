@@ -80,4 +80,4 @@ class TextLoader(object):
     self.chars = chars
     self.seq_lengths = []
 
-    vocab_file = os.
+    vocab_file = os.path.join(data_dir, "vocab.
