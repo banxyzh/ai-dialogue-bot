@@ -81,4 +81,4 @@ class TextLoader(object):
     self.seq_lengths = []
 
     vocab_file = os.path.join(data_dir, "vocab.pkl")
-    data_file = o
+    data_file = os.path.join(data_dir, "dat
