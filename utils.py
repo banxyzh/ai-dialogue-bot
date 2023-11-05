@@ -83,4 +83,5 @@ class TextLoader(object):
     vocab_file = os.path.join(data_dir, "vocab.pkl")
     data_file = os.path.join(data_dir, "data.pkl")
 
-    if os.path.exists(da
+    if os.path.exists(data_file):
+      print("[Te
