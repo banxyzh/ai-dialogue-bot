@@ -84,4 +84,4 @@ class TextLoader(object):
     data_file = os.path.join(data_dir, "data.pkl")
 
     if os.path.exists(data_file):
-      print("[Te
+      print("[TextLoader] Load saved data
