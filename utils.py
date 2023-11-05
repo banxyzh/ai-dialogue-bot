@@ -83,4 +83,4 @@ class TextLoader(object):
     vocab_file = os.path.join(data_dir, "vocab.pkl")
     data_file = os.path.join(data_dir, "data.pkl")
 
-    if
+    if os.path.exists(da
