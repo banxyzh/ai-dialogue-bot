@@ -87,3 +87,4 @@ class TextLoader(object):
       print("[TextLoader] Load saved data...")
       with open(data_file, 'rb') as f:
         self.data, self.seq_lengths, my_chars = cPickle.load(f)
+        self.seq_length = m
