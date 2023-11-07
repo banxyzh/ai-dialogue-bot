@@ -86,4 +86,4 @@ class TextLoader(object):
     if os.path.exists(data_file):
       print("[TextLoader] Load saved data...")
       with open(data_file, 'rb') as f:
-        self.
+        self.data, self.seq_lengths,
