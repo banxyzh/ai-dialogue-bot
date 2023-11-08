@@ -88,4 +88,4 @@ class TextLoader(object):
       with open(data_file, 'rb') as f:
         self.data, self.seq_lengths, my_chars = cPickle.load(f)
         self.seq_length = max(self.seq_lengths)
-        if my_chars is not Non
+        if my_chars is not None and not len(self.char
