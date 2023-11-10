@@ -90,4 +90,4 @@ class TextLoader(object):
         self.seq_length = max(self.seq_lengths)
         if my_chars is not None and not len(self.chars) > 0:
           self.chars = my_chars
-        self.vocab = dict(zip(se
+        self.vocab = dict(zip(self.chars, range(len(sel
