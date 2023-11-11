@@ -93,4 +93,4 @@ class TextLoader(object):
         self.vocab = dict(zip(self.chars, range(len(self.chars))))
         self.vocab_size = len(self.chars)
     else:
-      pr
+      print("[TextLoader] Rea
