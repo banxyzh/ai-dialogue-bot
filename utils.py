@@ -94,4 +94,4 @@ class TextLoader(object):
         self.vocab_size = len(self.chars)
     else:
       print("[TextLoader] Reading text file...")
-      self.preprocess(self.in
+      self.preprocess(self.input_files, data_file, 
