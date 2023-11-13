@@ -97,3 +97,4 @@ class TextLoader(object):
       self.preprocess(self.input_files, data_file, vocab_file)
 
     print("[TextLoader] Processing...")
+    self.create_b
