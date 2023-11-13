@@ -96,4 +96,4 @@ class TextLoader(object):
       print("[TextLoader] Reading text file...")
       self.preprocess(self.input_files, data_file, vocab_file)
 
-    print("[
+    print("[TextLoader] Processing...")
