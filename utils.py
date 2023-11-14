@@ -98,4 +98,6 @@ class TextLoader(object):
 
     print("[TextLoader] Processing...")
     self.create_batches()
-    self.res
+    self.reset_batch_pointer()
+
+  def
