@@ -100,4 +100,4 @@ class TextLoader(object):
     self.create_batches()
     self.reset_batch_pointer()
 
-  def
+  def preprocess(self, input_fil
