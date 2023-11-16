@@ -105,4 +105,4 @@ class TextLoader(object):
     seq_length = 0
 
     for input_file in input_files:
-      with c
+      with codecs.open(input_f
