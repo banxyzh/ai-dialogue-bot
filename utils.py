@@ -104,4 +104,5 @@ class TextLoader(object):
     sents = []
     seq_length = 0
 
-    for input_file
+    for input_file in input_files:
+      with c
