@@ -106,4 +106,4 @@ class TextLoader(object):
 
     for input_file in input_files:
       with codecs.open(input_file, "r", "utf-8") as f:
-        lines
+        lines = normalize_unicodes
