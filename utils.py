@@ -105,4 +105,5 @@ class TextLoader(object):
     seq_length = 0
 
     for input_file in input_files:
-      with codecs.open(input_file, "r", "utf-8") a
+      with codecs.open(input_file, "r", "utf-8") as f:
+        lines
