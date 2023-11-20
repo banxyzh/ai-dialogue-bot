@@ -109,4 +109,4 @@ class TextLoader(object):
         lines = normalize_unicodes(f.read()).split("\n")
 
         for line in lines:
-   
+          if len(line
