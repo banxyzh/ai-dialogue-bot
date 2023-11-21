@@ -111,4 +111,5 @@ class TextLoader(object):
         for line in lines:
           if len(line) == 0:
             continue
-          seq_length = max(seq_length, len(
+          seq_length = max(seq_length, len(line))
+          sents.a
