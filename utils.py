@@ -110,4 +110,5 @@ class TextLoader(object):
 
         for line in lines:
           if len(line) == 0:
-            c
+            continue
+          seq_leng
