@@ -112,4 +112,6 @@ class TextLoader(object):
           if len(line) == 0:
             continue
           seq_length = max(seq_length, len(line))
-          sents.a
+          sents.append(line)
+
+    if 
