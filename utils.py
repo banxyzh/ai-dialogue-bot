@@ -114,4 +114,6 @@ class TextLoader(object):
           seq_length = max(seq_length, len(line))
           sents.append(line)
 
-    if not len(self.chars
+    if not len(self.chars):
+      # Compose vocab
+     
