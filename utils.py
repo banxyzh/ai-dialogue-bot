@@ -116,4 +116,5 @@ class TextLoader(object):
 
     if not len(self.chars):
       # Compose vocab
-     
+      lines = "".join(sents)
+ 
