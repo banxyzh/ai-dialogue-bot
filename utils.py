@@ -117,4 +117,5 @@ class TextLoader(object):
     if not len(self.chars):
       # Compose vocab
       lines = "".join(sents)
-      counter = collections
+      counter = collections.Counter(lines)
+      count_p
