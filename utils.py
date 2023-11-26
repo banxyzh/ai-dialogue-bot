@@ -118,4 +118,5 @@ class TextLoader(object):
       # Compose vocab
       lines = "".join(sents)
       counter = collections.Counter(lines)
-      count_pairs = sorted(counter.items(), key=lambda x: -x[1
+      count_pairs = sorted(counter.items(), key=lambda x: -x[1])
+      self.chars, 
