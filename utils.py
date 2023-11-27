@@ -119,4 +119,4 @@ class TextLoader(object):
       lines = "".join(sents)
       counter = collections.Counter(lines)
       count_pairs = sorted(counter.items(), key=lambda x: -x[1])
-      self.chars, 
+      self.chars, _ = list(zip(*count_pairs
