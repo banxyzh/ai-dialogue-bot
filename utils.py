@@ -120,4 +120,4 @@ class TextLoader(object):
       counter = collections.Counter(lines)
       count_pairs = sorted(counter.items(), key=lambda x: -x[1])
       self.chars, _ = list(zip(*count_pairs))
-      self.chars = START_V
+      self.chars = START_VOCAB + list(self.chars)
