@@ -122,4 +122,4 @@ class TextLoader(object):
       self.chars, _ = list(zip(*count_pairs))
       self.chars = START_VOCAB + list(self.chars)
 
-    self.vocab = dict(zip
+    self.vocab = dict(zip(self.chars, range(len(
