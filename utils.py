@@ -127,4 +127,4 @@ class TextLoader(object):
     self.seq_length = seq_length + 1 # for additional symbols GO, EOS
     self.data = np.zeros((len(sents), self.seq_length), dtype=np.int32)
 
-    # Convert text to 
+    # Convert text to one-hot representatio
