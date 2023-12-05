@@ -128,4 +128,5 @@ class TextLoader(object):
     self.data = np.zeros((len(sents), self.seq_length), dtype=np.int32)
 
     # Convert text to one-hot representation
-    for i, sent in enum
+    for i, sent in enumerate(sents):
+      vec, vec_l
