@@ -129,4 +129,4 @@ class TextLoader(object):
 
     # Convert text to one-hot representation
     for i, sent in enumerate(sents):
-      vec, vec_l
+      vec, vec_len = self.parse_input(sen
