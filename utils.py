@@ -133,4 +133,5 @@ class TextLoader(object):
       self.seq_lengths.append(vec_len)
       self.data[i] = vec
 
-    # Export voca
+    # Export vocab and data
+    with open(vocab_file,
