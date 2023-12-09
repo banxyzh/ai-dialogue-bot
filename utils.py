@@ -134,4 +134,5 @@ class TextLoader(object):
       self.data[i] = vec
 
     # Export vocab and data
-    with open(vocab_file,
+    with open(vocab_file, "wb") as f:
+      cP
