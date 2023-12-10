@@ -136,4 +136,5 @@ class TextLoader(object):
     # Export vocab and data
     with open(vocab_file, "wb") as f:
       cPickle.dump(self.chars, f)
-    with open(data_file, "wb"
+    with open(data_file, "wb") as f:
+      cPickle
