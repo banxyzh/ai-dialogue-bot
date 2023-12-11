@@ -137,4 +137,4 @@ class TextLoader(object):
     with open(vocab_file, "wb") as f:
       cPickle.dump(self.chars, f)
     with open(data_file, "wb") as f:
-      cPickle
+      cPickle.dump((self.data, self.se
