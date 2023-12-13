@@ -139,4 +139,4 @@ class TextLoader(object):
     with open(data_file, "wb") as f:
       cPickle.dump((self.data, self.seq_lengths, self.chars), f)
 
-  de
+  def parse_input(self, inpu
