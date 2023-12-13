@@ -139,4 +139,5 @@ class TextLoader(object):
     with open(data_file, "wb") as f:
       cPickle.dump((self.data, self.seq_lengths, self.chars), f)
 
-  def parse_input(self, inpu
+  def parse_input(self, inputs):
+    eos_index = ST
