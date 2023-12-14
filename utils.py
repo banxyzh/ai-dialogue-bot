@@ -140,4 +140,5 @@ class TextLoader(object):
       cPickle.dump((self.data, self.seq_lengths, self.chars), f)
 
   def parse_input(self, inputs):
-    eos_index = ST
+    eos_index = START_VOCAB.index(EOS)
+    vec
