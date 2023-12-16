@@ -141,4 +141,5 @@ class TextLoader(object):
 
   def parse_input(self, inputs):
     eos_index = START_VOCAB.index(EOS)
-    vec = np.array([self.vocab.get(char, UNK_ID) for char in list
+    vec = np.array([self.vocab.get(char, UNK_ID) for char in list(inputs)])
+    vec_len
