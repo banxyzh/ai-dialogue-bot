@@ -143,4 +143,5 @@ class TextLoader(object):
     eos_index = START_VOCAB.index(EOS)
     vec = np.array([self.vocab.get(char, UNK_ID) for char in list(inputs)])
     vec_len = vec.size + 1 # for additional symbols EOS
-  
+    # Padding to seq_length
+    vec 
