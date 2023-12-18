@@ -145,4 +145,6 @@ class TextLoader(object):
     vec_len = vec.size + 1 # for additional symbols EOS
     # Padding to seq_length
     vec = np.lib.pad(vec, (0, self.seq_length - vec.size), 'constant')
+    vec[vec_len - 1] = eos_index
+
    
