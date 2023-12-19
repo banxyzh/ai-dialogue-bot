@@ -149,4 +149,5 @@ class TextLoader(object):
 
     return vec, vec_len
 
-  def compose_output(se
+  def compose_output(self, output):
+    res = 
