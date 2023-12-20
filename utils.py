@@ -153,4 +153,5 @@ class TextLoader(object):
     res = ""
 
     for o in output:
-      if o == 
+      if o == 2:
+        break
