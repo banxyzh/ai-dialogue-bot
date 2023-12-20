@@ -155,3 +155,6 @@ class TextLoader(object):
     for o in output:
       if o == 2:
         break
+
+      try:
+        re
