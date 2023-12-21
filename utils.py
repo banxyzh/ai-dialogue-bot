@@ -157,4 +157,4 @@ class TextLoader(object):
         break
 
       try:
-        re
+        res = res + self.chars
