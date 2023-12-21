@@ -157,4 +157,5 @@ class TextLoader(object):
         break
 
       try:
-        res = res + self.chars
+        res = res + self.chars[o]
+      except Exception
