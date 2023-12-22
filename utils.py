@@ -161,4 +161,6 @@ class TextLoader(object):
       except Exception as e:
         raise Exception('{0} is out of range'.format(o))
 
-    return
+    return res
+
+  def create_ba
