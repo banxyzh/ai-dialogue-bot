@@ -163,4 +163,5 @@ class TextLoader(object):
 
     return res
 
-  def create_ba
+  def create_batches(self):
+    self.num_bat
