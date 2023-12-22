@@ -159,4 +159,6 @@ class TextLoader(object):
       try:
         res = res + self.chars[o]
       except Exception as e:
-        raise Exception('{0} is out of range'.f
+        raise Exception('{0} is out of range'.format(o))
+
+    return
