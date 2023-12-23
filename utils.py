@@ -164,4 +164,4 @@ class TextLoader(object):
     return res
 
   def create_batches(self):
-    self.num_bat
+    self.num_batches = int((self.data.sh
