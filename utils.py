@@ -165,4 +165,4 @@ class TextLoader(object):
 
   def create_batches(self):
     self.num_batches = int((self.data.shape[0] - 1) / (self.batch_size))
-    batch_leng
+    batch_length = self.num_b
