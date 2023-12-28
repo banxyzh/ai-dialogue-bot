@@ -167,4 +167,4 @@ class TextLoader(object):
     self.num_batches = int((self.data.shape[0] - 1) / (self.batch_size))
     batch_length = self.num_batches * int(self.batch_size) + 1
     self.data = self.data[:batch_length]
-    self.seq_lengths
+    self.seq_lengths = self.seq_lengths[:batch_
