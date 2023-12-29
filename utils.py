@@ -169,4 +169,5 @@ class TextLoader(object):
     self.data = self.data[:batch_length]
     self.seq_lengths = self.seq_lengths[:batch_length]
 
-    xdata = 
+    xdata = self.data[:-1]
+    ydata =
