@@ -174,4 +174,5 @@ class TextLoader(object):
     xdata_lengths = np.array(self.seq_lengths[:-1])
     ydata_lengths = np.array(self.seq_lengths[1:])
 
-    self.x_batches = np.split(xdata, self.nu
+    self.x_batches = np.split(xdata, self.num_batches, 0)
+    self.y_bat
