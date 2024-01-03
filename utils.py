@@ -176,4 +176,4 @@ class TextLoader(object):
 
     self.x_batches = np.split(xdata, self.num_batches, 0)
     self.y_batches = np.split(ydata, self.num_batches, 0)
-    self.xda
+    self.xdata_lengths_batches =
