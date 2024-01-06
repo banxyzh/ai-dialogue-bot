@@ -180,4 +180,5 @@ class TextLoader(object):
     self.ydata_lengths_batches = np.split(ydata_lengths, self.num_batches, 0)
 
   def next_batch(self):
-    x = self.x_batches[self
+    x = self.x_batches[self.pointer]
+    y = s
