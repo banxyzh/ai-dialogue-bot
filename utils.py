@@ -181,4 +181,4 @@ class TextLoader(object):
 
   def next_batch(self):
     x = self.x_batches[self.pointer]
-    y = s
+    y = self.y_batches[self.pointe
