@@ -182,4 +182,5 @@ class TextLoader(object):
   def next_batch(self):
     x = self.x_batches[self.pointer]
     y = self.y_batches[self.pointer]
-    x_lengths = self.xdata_lengths_batches[self.poi
+    x_lengths = self.xdata_lengths_batches[self.pointer]
+    y_lengths = self.ydata_l
