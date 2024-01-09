@@ -184,4 +184,6 @@ class TextLoader(object):
     y = self.y_batches[self.pointer]
     x_lengths = self.xdata_lengths_batches[self.pointer]
     y_lengths = self.ydata_lengths_batches[self.pointer]
-    self.pointer 
+    self.pointer += 1
+
+    return x, y
