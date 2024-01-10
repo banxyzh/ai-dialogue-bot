@@ -188,4 +188,4 @@ class TextLoader(object):
 
     return x, y, x_lengths, y_lengths
 
-  de
+  def reset_batch_pointer(self)
