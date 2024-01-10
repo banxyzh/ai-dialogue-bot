@@ -192,4 +192,4 @@ class TextLoader(object):
     self.pointer = 0
 
 
-i
+if __name__ == "__main__
