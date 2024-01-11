@@ -193,4 +193,5 @@ class TextLoader(object):
 
 
 if __name__ == "__main__":
-  emb = np.load(
+  emb = np.load("./data/emb.npy")
+  chars = cPi
