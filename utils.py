@@ -194,4 +194,4 @@ class TextLoader(object):
 
 if __name__ == "__main__":
   emb = np.load("./data/emb.npy")
-  chars = cPickle.load(open("./da
+  chars = cPickle.load(open("./data/vocab.pkl", 'rb')
