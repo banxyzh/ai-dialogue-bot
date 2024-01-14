@@ -1,3 +1,3 @@
 # AI Dialogue Bot with Tensorflow
 
-This project leverages Tensorflow to b
+This project leverages Tensorflow to build a Seq2Seq Chatbot with 
