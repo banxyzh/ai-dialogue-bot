@@ -6,4 +6,4 @@ This project leverages Tensorflow to build a Seq2Seq Chatbot with an attention m
 You need to have tensorflow r1.1 installed to run this project.
 
 ## References
-- [Neural Ma
+- [Neural Machine Translation by
