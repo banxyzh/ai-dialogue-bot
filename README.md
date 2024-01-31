@@ -13,4 +13,5 @@ You need to have tensorflow r1.1 installed to run this project.
 - [Attention with Intention for a Neural Network Conversation Model](https://arxiv.org/pdf/1510.08565.pdf)
 
 ## Result
-Here's an instance of the result achieved after training with 1400 movies and tv show subtitles (around 1.4m sentenc
+Here's an instance of the result achieved after training with 1400 movies and tv show subtitles (around 1.4m sentences).
+![Demo](/
