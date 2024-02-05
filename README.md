@@ -17,4 +17,5 @@ Here's an instance of the result achieved after training with 1400 movies and tv
 ![Demo](/meetup_demo.png)
 
 ## Future Work
-- Use an Anti-language model to suppress generic
+- Use an Anti-language model to suppress generic response
+- Experiment with 
