@@ -18,4 +18,4 @@ Here's an instance of the result achieved after training with 1400 movies and tv
 
 ## Future Work
 - Use an Anti-language model to suppress generic response
-- Experiment with 
+- Experiment with MMI-loss as an objective 
